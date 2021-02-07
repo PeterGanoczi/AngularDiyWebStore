@@ -1,0 +1,25 @@
+.example-card {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+  
+  
+
+  .mat-card-image{
+      height: 200px;
+      width: auto;
+      margin: auto;
+      border-radius: 3%;
+  }
+  .mat-card-actions{
+    display: flex;
+    justify-content: center;
+  } 
+
+  .mat-flat-button{
+  
+    margin: 5px ;
+  }

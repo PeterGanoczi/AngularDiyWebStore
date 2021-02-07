@@ -1,0 +1,95 @@
+<div class="col-md-12">
+    <div class="card card-container">
+      
+      <form
+        name="form"
+        (ngSubmit)="onSubmit()"
+        #f="ngForm"
+      >
+  
+      <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Create product</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="fill" class="form-group">
+                <mat-label for="name">Product Name</mat-label>
+                <input matInput 
+                type="text"
+                class="form-control"
+                name="name"
+                [(ngModel)]="form.name"
+                required
+                minlength="3"
+                #name="ngModel">
+              
+                <mat-error *ngIf="name.errors?.required">Name of product is required</mat-error> 
+                <mat-error *ngIf="name.errors?.minlength">Product name must have at least 3 characters</mat-error>  
+                        
+                     
+            </mat-form-field>
+  
+            <mat-form-field appearance="fill" class="form-group">
+              <mat-label for="description">Description</mat-label>
+              <textarea matInput 
+              type="description"
+              class="form-control"
+              name="description"
+              [(ngModel)]="form.description"
+              required
+              #description="ngModel"></textarea>
+               
+               <mat-error *ngIf="description.errors?.required">Description is required</mat-error> 
+   
+                
+                   
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="form-group">
+            <mat-label for="price">Price</mat-label>
+            <input matInput 
+            type="price"
+            class="form-control"
+            name="price"
+            [(ngModel)]="form.price"
+            required
+            #price="ngModel">
+            
+             <mat-error *ngIf="price.errors?.required">Price is required</mat-error> 
+            
+              
+                 
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label for="imgUrl">Image</mat-label>
+            <input matInput 
+            type="imgUrl"
+            class="form-control"
+            name="imgUrl"
+            [(ngModel)]="form.imgUrl"
+            required
+            #image="ngModel">
+            
+              <!-- <mat-error *ngIf="imgUrl.errors?.required">Image is required</mat-error>  
+            
+               -->
+                 
+        </mat-form-field>
+  
+        <div class="form-group">
+          <button type="submit" [disabled]="!f.form.valid"mat-flat-button color="primary">Save product</button>
+        </div>
+  
+        <!-- <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+          Signup failed!<br />{{ errorMessage }}
+        </div>
+   -->
+          </mat-card-content>
+        </mat-card>
+        
+      </form>
+  
+      
+    </div>
+  </div>

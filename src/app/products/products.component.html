@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <mat-card class="example-card" *ngFor="let product of products" routerLink="/product/{{product.id}}" >
+    <div>
+      <mat-card-header >
+      
+        <mat-card-title><strong>{{product.name}}</strong></mat-card-title>
+        <mat-card-subtitle>{{product.createTime}}</mat-card-subtitle>
+        <mat-card-subtitle><strong>Creator: </strong>{{product.userName}}</mat-card-subtitle>
+  
+      </mat-card-header>
+    
+      
+
+      <mat-card-content>
+        <img mat-card-image *ngIf="product" src="{{product.imgUrl}}" alt="{{product.name}}">
+        
+      </mat-card-content>
+    </div>
+    <div>
+        <p id="price"><strong>Price: </strong>{{product.price}} €</p>
+    </div>
+    
+  </mat-card>
+</div>
