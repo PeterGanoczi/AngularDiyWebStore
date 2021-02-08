@@ -1,5 +1,5 @@
-# DiyWebStore
-Build & Run project step by step:
+
+# Build & Run project step by step:
 _____________________________________
 1.create database "diyweb" and run SQL script "diy-web-db.sql" ==> https://github.com/PeterGanoczi/AngularDiyWebStore/blob/master/diy-web-db.sql
 ____
@@ -16,7 +16,9 @@ ____
 7.open "http://localhost:4200/"
 ____
 8.enjoy
+____
 ------------------------------------------------------------------------------------------------
+# DiyWebStore
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
 ## Development server
