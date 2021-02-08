@@ -1,7 +1,7 @@
 # DiyWebStore
 Build & Run project step by step:
 _____________________________________
-1.create database "diyweb" and run SQL script "diy-web-db.sql"
+1.create database "diyweb" and run SQL script "diy-web-db.sql" ==> https://github.com/PeterGanoczi/AngularDiyWebStore/blob/master/diy-web-db.sql
                          2.create user to handle database with name "diyadmin" and password "diyadmin", and give him all privileges
                           3.clone server from https://github.com/PeterGanoczi/AngularServer
 4.clone this project
