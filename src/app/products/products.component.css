@@ -15,6 +15,7 @@
     height: auto;
     width: 240px;
     margin: auto;
+    
     border-radius: 3%;
 }
 
@@ -25,5 +26,5 @@
 }
 
 #price{
-  height: fit-content;
+  margin-bottom: 0;
 }
